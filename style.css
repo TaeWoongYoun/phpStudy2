@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    padding-left: 0;
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    width: 200px;
+    height: 100%;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 65px;
+}
+
+nav{
+    width: 800px;
+    height: 250px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    width: 200px;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    color: #999;
+}
+
+nav ul li:hover{
+    transition: all 0.5s;
+    color: black;
+}
+
+.btn_area{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn_area button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 900;
+    color: #999;
+    font-size: 18px;
+}
+
+.btn_area button:hover{
+    transition: all 0.5s;
+    color: black;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.content_text{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 100px;
+    background-color: #ADFCFE;
+    color: #222;
+}
+
+.content_text p{
+    font-size: 48px;
+    padding-left: 60px;
+    line-height: 245px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+}
+
+footer p{
+    line-height: 60px;
+    padding-left: 20px;
+    color: #999;
+}
+
+.login_modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 210px;
+    box-shadow: 0 0 10px #444;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+}
+
+.login_modal h1{
+    text-align: center;
+    line-height: 50px;
+}
+
+.login_modal input[type="text"], .login_modal input[type="password"]{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    margin-left: 19px;
+}
+
+.login_btn_area{
+    width: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 90px;
+}
+
+.login_modal input[type='submit'], .login_modal input[type='reset']{
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.join_modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #444;
+    display: none;
+}
+
+.join_modal h1{
+    text-align: center;
+    line-height: 50px;
+}
+
+.id_check{
+    width: 370px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.id_check input{
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+.id_check button{
+    width: 100px;
+    height: 40px;
+    background-color: #222;
+    border: 1px solid #222;
+    color: #fff;
+    margin-top: 1px;
+}
+
+#name{
+    width: 360px;
+    height: 40px;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#userpw, #pw_check{
+    width: 360px;
+    height: 40px;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 15px;
+}
+
+.join_btn_area{
+    width: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 90px;
+}
+
+.join_modal input[type='submit'], .join_modal input[type='reset']{
+    margin-top: 15px;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+}
