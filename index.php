@@ -46,21 +46,24 @@
 
     <div class="join_modal">
         <h1>회원가입</h1>
-        <form action="join.php" method="post">
-            <p class="id_check">
-                <input type="text" name="userid" id="userid" placeholder="아이디">
-                <button>중복 확인</button>
-            </p>
-            <p><input type="text" name="name" id="name" placeholder="이름"></p>            
-            <p><input type="password" name="userpw" id="userpw" placeholder="비밀번호"></p>
-            <p><input type="password" id="pw_check" placeholder="비밀번호 확인"></p>
-            <p class="join_btn_area">
-                <input type="submit" value="제출">
-                <input type="reset" value="취소" id="join_reset">
-            </p>
-        </form>
+        <form action="join.php" method="post" onsubmit="return check(this)">
+        <p class="id_check">
+            <input type="text" name="joinid" id="joinid" placeholder="아이디">
+            <button type="button" id="check_id">중복 확인</button>
+        </p>
+        <input type="hidden" name="idok" id="idok" value="0">
+        <p><input type="text" name="name" id="name" placeholder="이름"></p>            
+        <p><input type="password" name="joinpw" id="joinpw" placeholder="비밀번호"></p>
+        <p><input type="password" id="pw_check" placeholder="비밀번호 확인"></p>
+        <p class="join_btn_area">
+            <input type="submit" value="제출">
+            <input type="reset" value="취소" id="join_reset">
+        </p>
+    </form>    
+
     </div>
 
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

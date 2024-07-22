@@ -200,7 +200,7 @@ footer p{
     margin-top: 10px;
 }
 
-#userpw, #pw_check{
+#joinpw, #pw_check{
     width: 360px;
     height: 40px;
     border: 1px solid black;
