@@ -56,7 +56,7 @@
         <p><input type="password" name="joinpw" id="joinpw" placeholder="비밀번호"></p>
         <p><input type="password" id="pw_check" placeholder="비밀번호 확인"></p>
         <p class="join_btn_area">
-            <input type="submit" value="제출">
+            <input type="submit" value="제출" id="join_btn">
             <input type="reset" value="취소" id="join_reset">
         </p>
     </form>    

@@ -56,3 +56,21 @@ $(document).ready(function() {
         return true;
     };
 });
+
+$("#join_btn").click(function(){
+    var name = $("#name").val()
+    var joinpw = $("#joinpw").val()
+    var joinpw_check = $("#pw_check").val()
+    if(name.length < 2){
+        alert("이름을 2글자 이상 입력해주세요.");
+        return false;
+    }
+    if(joinpw.length < 4){
+        alert("비밀번호를 4글자 이상 입력해주세요.")
+        return false
+    }
+    if(joinpw != joinpw_check){
+        alert("비밀번호를 확인해주세요.")
+        return false
+    }
+})
