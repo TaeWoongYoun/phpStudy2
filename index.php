@@ -1,3 +1,4 @@
+<?php $conn = mysqli_connect('localhost', 'root', '', 'homepage')?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
