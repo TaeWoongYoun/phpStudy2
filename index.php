@@ -15,7 +15,19 @@
                 <li>소개</li>
                 <li>이야기</li>
                 <li>일정</li>
-                <li>홈페이지 신청</li>
+                <?php
+                    $sql = "SELECT * FROM page";
+                    $result = mysqli_query($conn, $sql);
+                    if (isset($_GET['id']) && ($_GET['id'] == 'admin' || $_GET['id'] == 'manager')){
+                        $id = htmlspecialchars($_GET['id'], ENT_QUOTES, 'UTF-8');
+                        echo "<a href='select.php?id={$id}'><li>신청목록 조회</li></a>";
+                    } elseif (isset($_GET['id'])) {
+                        $id = htmlspecialchars($_GET['id'], ENT_QUOTES, 'UTF-8');
+                        echo "<a href='insert.php?id={$id}'><li>홈페이지 신청</li></a>";
+                    } else {
+                        echo "";
+                    }
+                ?>
             </ul>
         </nav>
         <div class="btn_area">
