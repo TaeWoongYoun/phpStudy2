@@ -24,22 +24,14 @@ $(document).ready(function() {
             alert("아이디를 4글자 이상 입력해주세요.");
             return false;
         }
-        $.ajax({
-            url: "check_id.php",
-            method: "POST",
-            data: { joinid: uid },
+        $.ajax({url: "check_id.php",method: "POST",data: { joinid: uid },
             success: function(data) {
-                console.log("Response from check_id.php:", data);
-                if (data.trim() > 0) {
-                    alert("중복된 아이디입니다.");
+                if (data > 0) {
+                    alert("사용중인 아이디입니다.");
                 } else {
                     alert("사용 가능한 아이디입니다.");
                     $("#idok").val(1);
                 }
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.log("AJAX Error:", textStatus, errorThrown);
-                alert("AJAX 요청 실패: " + textStatus + ", " + errorThrown);
             }
         });
     });
@@ -53,7 +45,6 @@ $(document).ready(function() {
             alert("중복확인을 먼저 진행해주세요.");
             return false;
         }
-        return true;
     };
 });
 
